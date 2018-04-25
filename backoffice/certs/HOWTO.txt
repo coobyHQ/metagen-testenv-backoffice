@@ -2,13 +2,13 @@
 openssl genrsa -out ca-key.pem 2048
 
 2. Generate the CA certificate
-openssl req -x509 -new -nodes -key ca-key.pem -sha256 -days 3650 -out ca-crt.pem -subj "/C=CA/ST=Ontario/L=Ontario/O=Gridworkz/OU=Test Certification Authority/CN=Gridworkz"
+openssl req -x509 -new -nodes -key ca-key.pem -sha256 -days 3650 -out ca-crt.pem -subj "/C=CA/ST=Ontario/L=FortErie/O=Gridworkz/OU=Test Certification Authority/CN=Gridworkz"
 
 3. Generate the https private key
 openssl genrsa -out metagen-testenv-identityserver-key.pem 2048
 
 4. Generate the https CSR
-openssl req -new -key metagen-testenv-identityserver-key.pem -out metagen-testenv-identityserver-csr.pem -subj "/C=CA/ST=Ontario/L=Ontario/O=Gridworkz/OU=MetaGen Test Server/CN=metagen-testenv-identityserver"
+openssl req -new -key metagen-testenv-identityserver-key.pem -out metagen-testenv-identityserver-csr.pem -subj "/C=CA/ST=Ontario/L=FortErie/O=Gridworkz/OU=MetaGen Test Server/CN=metagen-testenv-identityserver"
 
 5. Generate the https certificate
 openssl x509 -req -in metagen-testenv-identityserver-csr.pem -CA ca-crt.pem -CAkey ca-key.pem -CAcreateserial -out metagen-testenv-identityserver-crt.pem -days 3650 -sha256

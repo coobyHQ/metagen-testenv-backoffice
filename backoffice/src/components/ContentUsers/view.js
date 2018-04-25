@@ -633,7 +633,7 @@ function view(me) {
 												className="form-control" 
 												onChange={(e)=>{ me.setRegisteredOfficeStreetNumber(e.target.value) }} 
 												value = {me.state.registeredOfficeStreetNumber}
-												placeholder = ""House number. Ex. 1344"
+												placeholder = "House number Ex. 1344"
 												aria-required="true" pattern="[1-9][0-9]*([a-z]?)"
 												required
 											/>

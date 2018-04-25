@@ -21,7 +21,9 @@ For installation with Docker refer to the [metagen-testenvironment](https://gith
 
 ### Configuration
 
+Note: Shutdown WSO2-IS if it's running before executing the following process.
 ```
+$ sudo apt-get install libxml2-utils
 $ cd backoffice
 $ npm install
 $ cd server
