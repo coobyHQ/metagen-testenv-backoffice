@@ -31,7 +31,7 @@ function view(me) {
 				{me.state.callbackOk!=null ? 
 					<span><button className='btn btn-default' onClick={me.callOk}>{me.state.okLabel}</button></span>
 				: ""}			
-                <span><button className='btn btn-default' onClick={me.hide}>Chiudi</button></span>
+                <span><button className='btn btn-default' onClick={me.hide}>Close</button></span>
             </ModalFooter>
         </Modal>
     )

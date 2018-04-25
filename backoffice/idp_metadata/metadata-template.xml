@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_5c2n3699-c647-82gd-hfjs-ak4xu6710475" entityID="https://metagen-testenv-identityserver:9443">
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_5c2n3699-c647-82gd-hfjs-ak4xu6710475" entityID="https://metagen.gridworkz.com">
 	<md:IDPSSODescriptor WantAuthnRequestsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
 		<md:KeyDescriptor use="signing">
 			<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
@@ -10,11 +10,11 @@
 				</ds:X509Data>
 			</ds:KeyInfo>
 		</md:KeyDescriptor>
-		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://metagen-testenv-identityserver:9443/samlsso" ResponseLocation="https://metagen-testenv-identityserver:9443/samlsso"/>
-		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://metagen-testenv-identityserver:9443/samlsso" ResponseLocation="https://metagen-testenv-identityserver:9443/samlsso"/>
+		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://metagen.gridworkz.com/samlsso" ResponseLocation="https://metagen.gridworkz.com/samlsso"/>
+		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://metagen.gridworkz.com/samlsso" ResponseLocation="https://metagen.gridworkz.com/samlsso"/>
 		<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
-		<md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://metagen-testenv-identityserver:9443/samlsso"/>
-		<md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://metagen-testenv-identityserver:9443/samlsso"/>
+		<md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://metagen.gridworkz.com/samlsso"/>
+		<md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://metagen.gridworkz.com/samlsso"/>
 		<saml2:Attribute xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" Name="metagenCode" NameFormat="xsi:string"/>
 		<saml2:Attribute xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" Name="name" NameFormat="xsi:string"/>
 		<saml2:Attribute xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" Name="familyName" NameFormat="xsi:string"/>
