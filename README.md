@@ -48,7 +48,7 @@ $ npm run start-prod
 ## Service availability
 
 The backoffice works even without an active Identity Server but it will not be possible to load the data.
-Configuration tasks will be available on https://localhost:8080 (the back-office)
+Configuration tasks will be available on https://metagen.yourdomain.com:8080 (the back-office)
 
 ## Backoffice
 
